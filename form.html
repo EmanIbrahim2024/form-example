@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <header >
+    
+        <ul class="headerPrive">
+            <li><a href="index.html" class="cursor-hover">Home</a></li>
+            <li class="cursor-hover"><a href="home.html" class="cursor-hover">Road Map</a></li>
+            <li class="cursor-hover"><a href="form.html" class="cursor-hover">Registration Form</a></li>
+            <li><a href="https://iti.gov.eg/home" target="_blank" class="cursor-hover">Contact</a></li>
+        </ul>
+        <img src="img/ITI_logo.png" width="200px" alt="ITI_logo" id="img-logo">
+        
+       
+    </header>
+    <section class="display-flex justify-center align-items">
+        <div class="form-border">
+            <h3>Register-Create Account</h3>
+            <p>Field marked with <span style="color:red">*</span> are compulsory fields</p>
+            <form>
+                <table>
+                    <tr>
+                        <td class="firstcolumn">
+                            <label for="nameUser"><span style="color:red">*</span>Your Name</label>
+                        </td>
+                        <td>
+                            <input type="text" required id="nameUser" name="nameUser">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="firstcolumn">
+                            <label for="Email"><span style="color:red">*</span>E-Mail ID</label>
+                        </td>
+                        <td>
+                            <input type="email" name="e-mail" id="Email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="firstcolumn">
+                            <label for="AlternateE-MailID"> Alternate E-Mail ID</label>
+                           
+                        </td>
+                        <td>
+                            <input type="email" name=" Alternate E-Mail ID" id="AlternateE-MailID">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="firstcolumn">
+                            Your phone
+                        </td>
+                        <td>
+                           <!-- -city Code-Phone Number -->
+                            <label for="countryCode"> Country code</label>&#160-&#160<label for="cityCode">city Code</label>&#160 &#160&#160- &#160<label for="phone-num">Phone Number</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="countryCode"> - <input type="number" id="cityCode"> -  <input type="number" id="phone-num">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="firstcolumn">
+                            <label for="Mobile">Mobile Phone</label>
+                        </td>
+                        <td>
+                            <input type="text"  id="Mobile" name="Mobile">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="firstcolumn">
+                            <label for="Address"><span style="color:red">*</span>Your Postal Address</label>
+                        </td>
+                        <td >
+                            <textarea id="Address" required>
+
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="firstcolumn">
+                            <label for="Country"><span style="color:red">*</span>Country</label>
+                        </td>
+                        <td>
+                            <select id="Country" required name="Country">
+                                <option value="Egypt">Egypt</option>
+                                <option value="America">America</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="firstcolumn">
+                            <label for="Password"><span style="color:red">*</span>Password</label>
+                        </td>
+                        <td>
+                            <input type="password" required id="password" name="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="firstcolumn">
+                            <label for="Re-Password"><span style="color:red">*</span>Re-Enter-Password</label>
+                        </td>
+                        <td>
+                            <input type="password" required id="Re-password" name="Re-password">
+                        </td>
+                    </tr>
+                </table>
+                <div class="check-box">
+                    <input type="checkbox" nam="accept" id="accept">
+                    <label for="accept">I accept The <a href="index.html">Terms of Us</a></label> <br>
+                
+                <input class="button1" type="button" value="continue >>">
+                <input class="button2" type="reset" value="Reset">
+            </div>
+            </form>
+            
+
+        </div>
+
+    </section>
+    <hr>
+    <footer>
+        <p style="text-align: center; color:rgb(13, 32, 121)">Copyright 2021 by Noha Salah &#174.All Rights Reserved</p>
+    </footer>
+    
+</body>
+</html>
